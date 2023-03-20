@@ -1,0 +1,134 @@
+.slider-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.slider{
+    width: 65%;
+    font-size: 1rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.line{
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transition: left 0.8s ease;
+    -moz-transition: left 0.8s ease;
+    transition: left 0.8s ease;
+}
+
+.slide{
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.slide > img {
+    width: 60%;
+}
+
+
+.slider_content{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 55%;
+    height: 101%;
+    background: #E2F0EF;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #364844;
+}
+
+.slider_info > h1 {
+    letter-spacing: -1px;
+    font-weight: bolder;
+}
+
+.slider_info > ul {
+    margin-left: 18px;
+    margin-top: 2%;
+    font-size: 0.9rem;
+}
+
+.slider_info{
+    font-size: 1.1rem;
+}
+
+
+.slider_btn-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.slider_cost > s{
+    font-size: 0.85rem;
+    color: #868686;
+}
+
+.slider_cost{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.slider_btn-container > button {
+    width: 9rem;
+    height: 2.1rem;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid #0DBC91;
+    color: #1FA181;
+}
+
+li::marker{
+    color: #0DBC91;
+    font-size: 1.3rem;
+}
+
+li > span {
+    position: relative;
+    left: -7px;
+}
+
+.slider_switch{
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.slider_switch > div{
+    color: #364844;
+}
+
+.slider_switch > button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slider_switch > button > img {
+    height: 0.8rem;
+    width: auto;
+}
+
+.slider_count{
+    color: #C0C0C0;
+}
